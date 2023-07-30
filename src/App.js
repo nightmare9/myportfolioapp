@@ -8,10 +8,10 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <div className="App" id='app'>
-      <BrowserRouter basename='/myportfolioapp'>
+      <BrowserRouter basename='/'>
       <Nav/>
       <Routes>
-        <Route exact path='/myportfolioapp' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/projects' element={<Myprojects/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
